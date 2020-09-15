@@ -1,0 +1,94 @@
+.regular {
+  background-color: #fff;
+}
+
+.start {
+  background-color: #e3341c;
+}
+
+.end {
+  background-color: #18e746;
+}
+
+.shortest-path {
+  background-color: blue;
+  animation-name: stretch;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(0.9);
+    background-color: yellow;
+    border-radius: 35%;
+  }
+  50% {
+    background-color: darkorange;
+  }
+  100% {
+    transform: scale(1.2);
+    background-color: orangered;
+  }
+}
+
+.visited {
+  animation-name: spread;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes spread {
+  0% {
+    transform: scale(0.6);
+    background-color: rgb(251, 255, 0);
+  }
+
+  50% {
+    transform: scale(1.2);
+    background-color: midnightblue;
+  }
+
+  100% {
+    transform: scale(1);
+    background-color: royalblue;
+  }
+}
+
+.walls {
+  animation-name: run;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes run {
+  0% {
+    transform: scale(0.6);
+    background-color: purple;
+  }
+
+  50% {
+    transform: scale(1.2);
+    background-color: fuchsia;
+  }
+
+  100% {
+    transform: scale(1);
+    background-color: #004;
+  }
+}
